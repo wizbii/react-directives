@@ -1,0 +1,49 @@
+{
+  "name": "react-directives",
+  "version": "0.0.0",
+  "description": "Seamless bridge between React and Angular.",
+  "scripts": {
+    "build": "babel src/index.js -o index.js",
+    "prepublish": "npm run build"
+  },
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "README.md",
+    "package.json"
+  ],
+  "babel": {
+    "presets": [
+      "es2015",
+      "stage-0",
+      "react"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wizbii/react-directives.git"
+  },
+  "keywords": [
+    "react",
+    "angular",
+    "migration",
+    "directive",
+    "component"
+  ],
+  "author": "Wizbii <dev@wizbii.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wizbii/react-directives/issues"
+  },
+  "homepage": "https://github.com/wizbii/react-directives",
+  "dependencies": {
+    "react": "15.1.0",
+    "react-dom": "15.1.0"
+  },
+  "devDependencies": {
+    "babel-cli": "6.9.0",
+    "babel-preset-es2015": "6.9.0",
+    "babel-preset-react": "6.5.0",
+    "babel-preset-stage-0": "6.5.0"
+  }
+}
