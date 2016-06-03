@@ -59,7 +59,6 @@ function reactDirectives (directives) {
     result[name] = directive;
   }
 
-  console.log(result);
   return result;
 }
 
