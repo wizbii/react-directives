@@ -16,7 +16,11 @@ function reactDirectives (directives) {
     // e.g richInput is valid whereas RichInput is not
     name = name.charAt(0).toLowerCase() + name.substr(1);
 
-    const props = Object.keys(Component.propTypes);
+    const props =
+      Component.hasOwnProperty('propTypes')
+        ? Object.keys(Component.propTypes)
+        : [];
+
     const bindings = props.reduce(function (result, prop) {
       result[prop] = '=';
       return result;
