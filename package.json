@@ -1,6 +1,6 @@
 {
   "name": "react-directives",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "Seamless bridge between React and Angular.",
   "scripts": {
     "build": "babel src/index.js -o index.js",
